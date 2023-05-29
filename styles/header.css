@@ -1,0 +1,135 @@
+.cabecalho{
+    background: var(--cor-menu);
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu__foto{
+    background-image: url(../assets/img/menutrainee.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.menu__foto_medidas{
+    padding: 1em;
+}
+
+.menu__lista{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top:100%;
+    width: 50vw;
+}
+
+.menu__logo{
+    display: none;
+}
+
+.menu__logo:checked ~ .menu__lista{
+    display: block;
+}
+
+.lista__item, .lista__titulo{
+    padding: 0.5em;
+    background: var(--cor-fundo-menu);
+    text-transform: uppercase;
+}
+
+.lista__titulo{
+    font-weight: 700;
+}
+
+.lista__link{
+    text-decoration: none;
+    color: var(--cor-links);
+}
+
+.titulo__pag{
+    display:none;
+}
+
+.menuEscrito{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .cabecalho{
+        justify-content:space-between;
+        gap: 20px;
+    }
+    .menu{
+        align-items: center;
+   }
+
+   .titulo__pag, .titulo__pag__negrito{
+        font-size: 28px;
+        font-family: var(--fonte-secundaria);
+        color: var(--cor-titulo);
+   }
+
+   .titulo__pag{
+        display: block;
+   }
+
+   .titulo__pag__negrito{
+        font-weight: 700;
+   }
+
+   .menuEscrito{
+        display: flex;
+        gap: 12rem;
+   }
+
+   .menuEscrito__botao{
+        display:none;
+   }
+
+   .menuEscrito__botao:checked ~ .menu__lista{
+        display: block;
+        width: 30vw;
+    }
+    
+   .menuEscrito__item{
+        font-weight: 400;
+        color: var(--cor-titulo);
+        font-family: var(--fonte-secundaria);
+        text-transform: uppercase;
+   }
+
+   .menuEscrito__link{
+        text-decoration: none;
+        color: var(--cor-titulo);
+   }
+
+   .menuEscrito__link:hover{
+        color: var(--cor-fundo-menu);
+   }
+   
+   .opcoes__invi{
+        display:none;
+   }
+
+   .menu__foto{
+        display:none;
+   }
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .cabecalho{
+        justify-content: space-around;
+        gap: 0;
+        width: auto;
+    }
+}

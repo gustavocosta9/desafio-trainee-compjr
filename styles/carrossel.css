@@ -1,0 +1,40 @@
+.carrossel__titulo{
+    background: var(--cor-menu);
+    padding: 1.5em 0em 1em 0em;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-titulo);
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5rem 0;
+}
+
+@media screen and (min-width:1024px) {
+    
+    .carrossel__titulo{
+        padding-top: 2.5em;
+        font-size: 26px;
+        margin-bottom: 8rem;
+    }
+    
+    .swiper{
+        width: 70%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+    }
+
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/inicial.css">
+    <title>Projeto Trainee</title>
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <div class="menu">
+            <input type="checkbox" id="menu" class="menu__logo">
+            <label for="menu">
+                <span class="menu__foto menu__foto_medidas"></span>
+            </label>
+            <ul class="menu__lista">
+                <li class="lista__titulo">Categorias</li>
+                <li class="lista__item"><a href="#" class="lista__link">Mamiferos</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Répteis</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Aves</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Aquáticos</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Insetos</a></li>
+            </ul>
+            <img src="/assets/img/logotrainee.svg">
+            <h1 class="titulo__pag"><b class="titulo__pag__negrito">GC</b>Wild</h1>
+        </div>
+
+        <ul class="menuEscrito">
+            <input type="checkbox" id="menuEscrito" class="menuEscrito__botao">
+            <label for="menuEscrito">
+                <li class="menuEscrito__item">Categorias</li>
+            </label>
+            <ul class="menu__lista">
+                <li class="lista__item"><a href="#" class="lista__link">Mamiferos</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Répteis</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Aves</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Aquáticos</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Insetos</a></li>
+            </ul>
+            <li class="menuEscrito__item"><a href="#" class="menuEscrito__link">Favoritos</a></li>
+            <li class="menuEscrito__item"><a href="#" class="menuEscrito__link">Carrinho</a></li>     
+        </ul>
+
+        <div class="opcoes">
+                <a class="opcoes__link" href="#"><img src="/assets/img/favoritotrainee.svg" alt="Meus favoritos" class="opcoes__img opcoes__invi"></a>
+                <a class="opcoes__link" href="#"><img src="/assets/img/comprastrainee.svg" alt="Minhas Compras" class="opcoes__img opcoes__invi"></a>
+                <a class="opcoes__link" href="#"><img src="/assets/img/usuariotrainee.svg" alt="Meu Perfil" class="opcoes__img"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Faça o Login para receber as novidades!</h2>
+        <form class="banner__formulario">
+            <input type="email" id="email" placeholder="Seu e-mail" class="banner__campo campo__email" required>
+            <input type="password" id="senha" placeholder="Sua senha" class="banner__campo campo__senha" required>
+            <input type="submit" id="enviar" class="banner__envio">
+        </form>
+        <a class="banner__esqsenha" href="#">Esqueceu sua senha?</a>
+        <p class="banner__texto">Caso não tenha uma conta, clique <a href="#" class="banner__link">aqui</a> para fazer o cadastro.</p>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Conheça algumas espécies brasileiras!</h2>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper">
+             
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide"><img src="/assets/img/onca_card1.svg" alt="Onça-Pintada"></div>
+                <div class="swiper-slide"><img src="/assets/img/jacare_card2.svg" alt="Jacaré-de-papo-amarelo"></div>
+                <div class="swiper-slide"><img src="/assets/img/harpia_card3.svg" alt="Harpia"></div>
+                <div class="swiper-slide"><img src="/assets/img/lobo_card4.svg" alt="lobo-guará"></div>
+                <div class="swiper-slide"><img src="/assets/img/ariranha_card5.svg" alt="ariranha"></div>
+                <div class="swiper-slide"><img src="/assets/img/boto_card6.svg" alt="boto cor de rosa"></div>
+            </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class=card__descricao>
+                <div class="descricao">
+                    <h2 class="card__descricao__titulo">Quem sou eu?</h2>
+                    <p class="card__descricao__texto">Gustavo Costa é estudante da UFLA, do curso de ciências da computação e é apaixonado pelos animais.</p>
+                </div>
+                <img src="/assets/img/eu_jiboia.svg" alt="Gustavo Costa" class="img__eu">
+            </div>
+            
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botao__item"><a href="https://linkedin.com/in/gustavocosta07"><img src="/assets/img/linkedintrainee.svg" alt="Linkedin do Gustavo"></a></li>
+                    <li class="botao__item"><a href="https://github.com/gustavocosta9"><img src="/assets/img/githubtrainee.svg" alt="GitHub do Gustavo"></a></li>
+                </ul>
+                <a href="https://portfolio-one-gilt-62.vercel.app/" target="_blank" class="botao__saibamais">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Não perca informações desses animais</h2>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper">
+             
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide"><img src="/assets/img/jubarte_card7.svg" alt="Baleia Jubarte"></div>
+                <div class="swiper-slide"><img src="/assets/img/jiboia_card8.svg" alt="Jiboia"></div>
+                <div class="swiper-slide"><img src="/assets/img/jaguatirica_card9.svg" alt="Jaguatirica"></div>
+                <div class="swiper-slide"><img src="/assets/img/tamandua_card10.svg" alt="Tamanduá Bandeira"></div>
+                <div class="swiper-slide"><img src="/assets/img/tarantula_card11.svg" alt="Aranha Tarântula"></div>
+                <div class="swiper-slide"><img src="/assets/img/abelha_card12.svg" alt="Abelha"></div>
+            </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="card__descricao__subtitulo">Talvez você se interesse...</h3>
+                    <h2 class="card__descricao__titulo">Nosso Planeta</h2>
+                    <p class="card__descricao__texto">Espalhe para os outros a informação sobre como podemos proteger os animais. 
+                    Aqui vai um documentário da Netflix recomendado: <b class="descricao__documentario">Nosso Planeta.</b>
+                    </p>
+                </div>
+                <img src="/assets/img/nossoplaneta.svg" alt="Documentário Nosso Planeta" class="img__documentario">
+            </div>
+            
+            <div class="card__botoes botoes__2">
+                <ul class="botoes">
+                    <li class="botao__item"><a href="https://www.asaseamigos.com.br/" target="_blank"><img src="/assets/img/asaseamigos.svg" alt="ONG Asas e Amigos"></a></li>
+                    <li class="botao__item"><a href="https://slothconservation.org/" target="_blank"><img src="/assets/img/slothconservation.svg" alt="ONG Sloth Conservation"></a></li>
+                </ul>
+                <a href="https://www.netflix.com/br/title/80049832" target="_blank" class="botao__saibamais botao__documentario">Acesse o Documentário</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards__selecionaveis">
+        <h2 class="card-S__titulop">Alguns animais pouco conhecidos</h2>
+        <div class="todos__cards">
+            <div class="card-S">
+                <img class="card-img-top" src="/assets/img/lince.svg" alt="Lince">
+                <div class="corpo__card-S">
+                    <h5 class="card-S__titulo">Quem é o Lince?</h5>
+                    <a href="https://pt.wikipedia.org/wiki/Lince" target="_blank" class="card-S__link">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card-S">
+                <img class="card-img-top" src="/assets/img/sapodevidro.svg" alt="Sapo de Vidro">
+                <div class="corpo__card-S">
+                    <h5 class="card-S__titulo">Sapo De Vidro</h5>
+                    <a href="https://www.ecycle.com.br/cientistas-descobrem-o-que-torna-o-sapo-de-vidro-transparente/" target="_blank" class="card-S__link">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card-S">
+                <img class="card-img-top" src="/assets/img/shoebill.svg" alt="Shoebill">
+                <div class="corpo__card-S">
+                    <h5 class="card-S__titulo">Shoebill</h5>
+                    <a href="https://pt.wikipedia.org/wiki/Balaeniceps_rex" target="_blank" class="card-S__link">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card-S">
+                <img class="card-img-top" src="/assets/img/fossa.svg" alt="Fossa">
+                <div class="corpo__card-S">
+                    <h5 class="card-S__titulo">Fossa</h5>
+                    <a href="https://pt.wikipedia.org/wiki/Fossa_(animal)" target="_blank" class="card-S__link">Visitar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de pesquisas, alterações ambientais, descobertas e outros.</p>
+        <input type="email" id="contato_email" placeholder="Cadastre seu e-mail" class="contato__email campo__email">
+        <iframe class="contato__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14876.009218976555!2d-45.00507948261722!3d-21.231757199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffd8856811737%3A0xec418e234ccb83af!2sUniversidade%20Federal%20de%20Lavras!5e0!3m2!1spt-BR!2sbr!4v1685325499665!5m2!1spt-BR!2sbr" width=80% height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Desenvolvido por Gustavo Costa &copy 2023</h2>
+        <p class="rodape__texto">Projeto Trainee CompJR</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> <!--Swiper pra fazer o carrossel-->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+</html>
